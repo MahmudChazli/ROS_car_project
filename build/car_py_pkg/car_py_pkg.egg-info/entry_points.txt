@@ -1,0 +1,6 @@
+[console_scripts]
+controller_node = car_py_pkg.controller_node:main
+gps_xyz_node = car_py_pkg.gps_xyz_node:main
+imu_monitor_node = car_py_pkg.imu_monitor_node:main
+movement_node = car_py_pkg.movement_node:main
+

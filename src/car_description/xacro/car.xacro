@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <link name="base_foot_link"/>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="${base_width} ${base_length} ${base_height}"/>
+      </geometry>
+
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="cyan"/>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="${base_width} ${base_length} ${base_height}"/>
+      </geometry>
+
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </collision>
+
+    <xacro:box_inertia m="5.0" l="${base_length * 2}"
+                               w="${base_width * 2}"
+                               h="${base_height}"
+                               xyz="0 0 0" rpy="0 0 0"/>
+
+  </link>
+
+  <link name="caster_wheel_link">
+    <visual>
+      <geometry>
+        <sphere radius="${caster_wheel_radius}"/>
+      </geometry>
+
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="black"/>
+    </visual>
+    
+    <collision>
+      <geometry>
+        <sphere radius="${caster_wheel_radius}"/>
+      </geometry>
+
+      <origin xyz="0 0 0" rpy="0 0 0"/>  
+    </collision>
+
+    <xacro:sphere_inertia m="0.5" r="${caster_wheel_radius * 2}"
+                  xyz="0 0 0" rpy="0 0 0"/>
+
+  </link>
+
+
+<!--***Macro**********************************************************-->
+
+
+  <xacro:wheel_link side="right"/>
+  <xacro:wheel_link side="left"/>
+  
+
+<!--***Joint**********************************************************-->
+
+
+  <joint name="base_joint" type="fixed">
+    <parent link="base_foot_link"/>
+    <child link="base_link"/>
+
+    <origin xyz="0 0 0.2" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_right_wheel_joint" type="continuous">
+    <parent link = "base_link"/>
+    <child link = "right_wheel_link"/>
+
+    <origin xyz="${0.01 -(base_length/2)}
+                 ${(wheel_radius + 0.01) - (base_width/2)}
+                 -0.1"
+                 rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="base_left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel_link"/>
+
+    <origin xyz="${0.01 -(base_length/2)}
+                 ${(base_width/2) - (wheel_radius + 0.01)}
+                 -0.1"
+                 rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="base_caster_wheel_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="caster_wheel_link"/>
+
+    <origin xyz="${base_length / 2 - 0.02}
+                 0
+                 ${(caster_wheel_radius - wheel_radius) - 0.102}"
+                 rpy="0 0 0"/>
+  </joint>
+
+</robot>

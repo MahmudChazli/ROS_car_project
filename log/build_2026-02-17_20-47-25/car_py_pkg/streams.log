@@ -1,0 +1,25 @@
+[0.581s] Invoking command in '/home/mahmudch/car_ws/build/car_py_pkg': PYTHONPATH=/home/mahmudch/car_ws/build/car_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mahmudch/car_ws/build/car_py_pkg/build --no-deps symlink_data
+[0.846s] running develop
+[0.989s] running egg_info
+[0.990s] creating car_py_pkg.egg-info
+[0.990s] writing car_py_pkg.egg-info/PKG-INFO
+[0.990s] writing dependency_links to car_py_pkg.egg-info/dependency_links.txt
+[0.990s] writing entry points to car_py_pkg.egg-info/entry_points.txt
+[0.990s] writing requirements to car_py_pkg.egg-info/requires.txt
+[0.990s] writing top-level names to car_py_pkg.egg-info/top_level.txt
+[0.990s] writing manifest file 'car_py_pkg.egg-info/SOURCES.txt'
+[0.992s] reading manifest file 'car_py_pkg.egg-info/SOURCES.txt'
+[0.992s] writing manifest file 'car_py_pkg.egg-info/SOURCES.txt'
+[0.993s] running build_ext
+[0.993s] Creating /home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages/car-py-pkg.egg-link (link to .)
+[0.994s] Installing controller_node script to /home/mahmudch/car_ws/install/car_py_pkg/lib/car_py_pkg
+[0.994s] Installing movement_node script to /home/mahmudch/car_ws/install/car_py_pkg/lib/car_py_pkg
+[0.994s] 
+[0.994s] Installed /home/mahmudch/car_ws/build/car_py_pkg
+[0.994s] running symlink_data
+[0.994s] creating /home/mahmudch/car_ws/install/car_py_pkg/share/ament_index
+[0.994s] creating /home/mahmudch/car_ws/install/car_py_pkg/share/ament_index/resource_index
+[0.994s] creating /home/mahmudch/car_ws/install/car_py_pkg/share/ament_index/resource_index/packages
+[0.994s] symbolically linking /home/mahmudch/car_ws/build/car_py_pkg/resource/car_py_pkg -> /home/mahmudch/car_ws/install/car_py_pkg/share/ament_index/resource_index/packages
+[0.994s] symbolically linking /home/mahmudch/car_ws/build/car_py_pkg/package.xml -> /home/mahmudch/car_ws/install/car_py_pkg/share/car_py_pkg
+[1.012s] Invoked command in '/home/mahmudch/car_ws/build/car_py_pkg' returned '0': PYTHONPATH=/home/mahmudch/car_ws/build/car_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mahmudch/car_ws/build/car_py_pkg/build --no-deps symlink_data

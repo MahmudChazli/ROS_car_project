@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="main" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="properties_gazebo.xacro"/>
+  <xacro:include filename="properties.xacro"/>
+  <xacro:include filename="material.xacro"/>
+  <xacro:include filename="macro.xacro"/>
+
+  <xacro:include filename="car.xacro"/>
+  <xacro:include filename="camera.xacro"/>
+  <xacro:include filename="lidar.xacro"/>
+  <xacro:include filename="gps.xml"/>
+  <xacro:include filename="imu.xml"/>
+
+</robot>

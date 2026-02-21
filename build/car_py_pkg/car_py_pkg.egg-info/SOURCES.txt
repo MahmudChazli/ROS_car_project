@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+car_py_pkg/__init__.py
+car_py_pkg/controller_node.py
+car_py_pkg/gps_xyz_node.py
+car_py_pkg/imu_monitor_node.py
+car_py_pkg/movement_node.py
+car_py_pkg.egg-info/PKG-INFO
+car_py_pkg.egg-info/SOURCES.txt
+car_py_pkg.egg-info/dependency_links.txt
+car_py_pkg.egg-info/entry_points.txt
+car_py_pkg.egg-info/requires.txt
+car_py_pkg.egg-info/top_level.txt
+car_py_pkg.egg-info/zip-safe
+resource/car_py_pkg

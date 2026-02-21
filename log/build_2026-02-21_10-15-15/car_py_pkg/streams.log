@@ -1,0 +1,19 @@
+[0.563s] Invoking command in '/home/mahmudch/car_ws/build/car_py_pkg': PYTHONPATH=/home/mahmudch/car_ws/build/car_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mahmudch/car_ws/build/car_py_pkg/build --no-deps symlink_data
+[0.779s] running develop
+[0.923s] running egg_info
+[0.923s] writing car_py_pkg.egg-info/PKG-INFO
+[0.923s] writing dependency_links to car_py_pkg.egg-info/dependency_links.txt
+[0.923s] writing entry points to car_py_pkg.egg-info/entry_points.txt
+[0.923s] writing requirements to car_py_pkg.egg-info/requires.txt
+[0.923s] writing top-level names to car_py_pkg.egg-info/top_level.txt
+[0.925s] reading manifest file 'car_py_pkg.egg-info/SOURCES.txt'
+[0.925s] writing manifest file 'car_py_pkg.egg-info/SOURCES.txt'
+[0.926s] running build_ext
+[0.927s] Creating /home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages/car-py-pkg.egg-link (link to .)
+[0.927s] Installing controller_node script to /home/mahmudch/car_ws/install/car_py_pkg/lib/car_py_pkg
+[0.927s] Installing gps_xyz_node script to /home/mahmudch/car_ws/install/car_py_pkg/lib/car_py_pkg
+[0.927s] Installing movement_node script to /home/mahmudch/car_ws/install/car_py_pkg/lib/car_py_pkg
+[0.928s] 
+[0.928s] Installed /home/mahmudch/car_ws/build/car_py_pkg
+[0.928s] running symlink_data
+[0.951s] Invoked command in '/home/mahmudch/car_ws/build/car_py_pkg' returned '0': PYTHONPATH=/home/mahmudch/car_ws/build/car_py_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mahmudch/car_ws/install/car_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mahmudch/car_ws/build/car_py_pkg/build --no-deps symlink_data
