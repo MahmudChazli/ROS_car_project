@@ -29,7 +29,7 @@ class Controller(Node):
         try:
             while rclpy.ok():
                 key = self.get_key()
-                if key in ['w', 's', 'a', 'd']:
+                if key in ['w', 's', 'a', 'd', 'q']:
                     msg = String()
                     msg.data = key
                     self.publisher_.publish(msg)

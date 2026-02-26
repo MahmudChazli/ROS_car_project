@@ -23,17 +23,21 @@ class Movement(Node):
   def movement_callback(self, msg):
     key_ = msg.data.lower()
 
-    if key_ == "w":
+    if key_ == 'w':
       self.vel_ += 0.5
     
-    elif key_ == "s":
+    elif key_ == 's':
       self.vel_ -= 0.5
 
-    elif key_ == "d":
+    elif key_ == 'd':
       self.theta_ -= 0.5
 
-    elif key_ == "a":
+    elif key_ == 'a':
       self.theta_ += 0.5
+    
+    elif key_ == 'q':
+      self.vel_ = 0.0
+      self.theta_ = 0.0
       
     self.vel_   = max(-1.0, min(1.0, self.vel_))
     self.theta_ = max(-1.0, min(1.0, self.theta_))
